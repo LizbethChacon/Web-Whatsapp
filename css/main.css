@@ -1,1 +1,49 @@
-/*Inserta tu css aqui*/
+/** { outline: 1px solid rgba(255,0,0,0.2);}*/
+body {
+  background: #dfdfdf;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px; }
+
+.header {
+  background: #048473;
+  height: 120px; }
+
+.container {
+  padding-left: 90px;
+  padding-right: 90px; }
+
+.well {
+  position: relative;
+  top: -100px;
+  padding: 0px;
+  height: 600px; }
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.panel {
+  padding: 0px; }
+
+.encabezado {
+  background: #EEECEC;
+  height: 40px; }
+
+.encabezado img {
+  width: 30px;
+  border-radius: 100%; }
+
+.panel-chat {
+  height: 100%;
+  background: url(../image/chat-panel-bg.png); }
+
+.cuerpo li {
+  height: 40px;
+  display: block;
+  border-top: 1px solid #dfdfdf; }
+
+.cuerpo img {
+  height: 40px;
+  border-radius: 100%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,62 @@
+/** { outline: 1px solid rgba(255,0,0,0.2);}*/
+
+$tipografia: "Open Sans", sans-serif;
+
+$color-gris-oscuro:#dfdfdf;
+$color-gris-claro:#EEECEC;
+$color-verde-oscuro:#048473;
+$color-verde-claro:#ADDD93;
+$color-blanco:#FFFFFF;
+$color-plomo:#B5B5B5;
+
+body{
+	background: $color-gris-oscuro;
+	font-family: $tipografia;
+	font-size: 13px;
+}
+.header{
+	background: $color-verde-oscuro;
+	height: 120px;
+}
+.container{
+	padding-left: 90px;
+	padding-right: 90px;
+}
+.well{
+	position: relative;
+	top: -100px;
+	padding: 0px;
+}
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.panel{
+	padding: 0px;
+}
+.encabezado{
+	background: $color-gris-claro;
+	height: 40px;
+}
+.encabezado img{
+	width: 30px;
+	border-radius: 100%;
+}
+
+.buscachat input{
+	margin: 10px;
+}
+.panel-chat{
+	height: 100%;
+	background: url(../image/chat-panel-bg.png)
+}
+
+.cuerpo li{
+	height: 40px;
+	display: block;
+	border-top: 1px solid $color-gris-oscuro;
+}
+.cuerpo img{
+	height: 40px;
+	border-radius: 100%;
+}
