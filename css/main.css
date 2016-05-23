@@ -15,8 +15,7 @@ body {
 .well {
   position: relative;
   top: -100px;
-  padding: 0px;
-  height: 600px; }
+  padding: 0px; }
 
 .row {
   margin-left: 0px;
@@ -32,6 +31,9 @@ body {
 .encabezado img {
   width: 30px;
   border-radius: 100%; }
+
+.buscachat input {
+  margin: 10px; }
 
 .panel-chat {
   height: 100%;
