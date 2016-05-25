@@ -4,6 +4,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 13px; }
 
+input {
+  cursor: auto;
+  text-rendering: auto;
+  text-align: start; }
+
 .header {
   background: #048473;
   height: 120px; }
@@ -32,12 +37,27 @@ body {
   width: 30px;
   border-radius: 100%; }
 
-.buscachat input {
+.encabezado i {
+  margin: 12px; }
+
+.buscador {
   margin: 10px; }
+
+.buscador span {
+  background: #FFFFFF; }
 
 .panel-chat {
   height: 100%;
   background: url(../image/chat-panel-bg.png); }
+
+.cuerpo, .conversacion {
+  overflow: scroll;
+  height: 350px;
+  overflow-y: visible;
+  overflow-x: hidden; }
+
+.conversacion {
+  overflow-y: hidden; }
 
 .cuerpo li {
   height: 40px;
@@ -46,6 +66,7 @@ body {
 
 .cuerpo img {
   height: 40px;
-  border-radius: 100%; }
+  border-radius: 100%;
+  padding: 5px; }
 
 /*# sourceMappingURL=main.css.map */

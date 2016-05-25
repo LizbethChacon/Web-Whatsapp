@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Whatsapp Web</title>
 	
-	<link rel="shortcut icon" href="image/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="../image/favicon.png" type="image/png">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -26,46 +26,45 @@
 				<div id="bienvenida" class="well">
 					<h3>Hola, por favor ingresa tu nombre para entrar al chat</h3>
 					<input type="text" id="nombre" class="form-control">
-					<button onclick="guardarNombre()">Entrar</button>
-					<div
-					  class="fb-like"
-					  data-share="true"
-					  data-width="450"
-					  data-show-faces="true">
-					</div>
+					<button onclick="guardarNombre()">Entrar</button>					
 				</div>
-
+				<div
+					class="fb-like"
+					data-share="true"
+					data-width="450"
+					data-show-faces="true">
+				</div>
 				<div id="chat" class="well">
 					<div class="row">
 						<div class="col-md-4 panel izquierda">
-							<div class="encabezado">
-								<div class="row">
-									<div class="col-md-6">
-										<img src="../image/logocodeacademy.png">		
-									</div>
-									<div class="col-md-6">
-										<i class="icon-message"></i>
-										<i class="icon-dots-three-vertical"></i>
-									</div>
-								</div>							
+							<div class="encabezado izquierda">
+								<img src="../image/logocodeacademy.png">
+								<i class="icon-dots-three-vertical pull-right"></i>
+								<i class="icon-message pull-right"></i>	
 							</div>
-							<div class="buscachat">
-								<div><i class="icon-search"></i><input value="Buscar o empezar un chat nuevo" type="text" id="buscador" class="form-control"></div>
+							<div class="input-group buscador">			
+								<span type="text" class="input-group-addon transparente"><i class="icon-search"></i></span>
+								<input placeholder="Buscar o empezar un chat nuevo" type="text" id="buscador" class="form-control">					
 							</div>
 							<div class="cuerpo">
 								<ul class="lista-personas list-inline list-unstyled">
-									<li><img src="../image/logocodeacademy.png"></li>
-									<li><img src="../image/raymi.jpg"></li>
-									<li><img src="../image/mariana.jpg"></li>
-									<li><img src="../image/anamaria.jpg"></li>
-									<li><img src="../image/rodulfo.jpg"></li>
-									<li><img src="../image/andrea.jpg"></li>
-									<li><img src="../image/mariapaula.jpg"></li>
-									<li><img src="../image/katy.jpg"></li>
-									<li><img src="../image/aldo.jpg"></li>
-									<li><img src="../image/mariapaula.jpg"></li>
-									<li><img src="../image/katy.jpg"></li>
-									<li><img src="../image/aldo.jpg"></li>
+									<li><img src="../image/logocodeacademy.png"><span>Laboratoria</span></li>
+									<li><img src="../image/raymi.jpg"><span>Raymi Saldonado</span></li>
+									<li><img src="../image/mariana.jpg"><span>Mariana</span></li>
+									<li><img src="../image/anamaria.jpg"><span>Ana Maria</span></li>
+									<li><img src="../image/rodulfo.jpg"><span>Rodulfo</span></li>
+									<li><img src="../image/andrea.jpg"><span>Andrea</span></li>
+									<li><img src="../image/mariapaula.jpg"><span>Maria Paula</span></li>
+									<li><img src="../image/katy.jpg"><span>Katy</span></li>
+									<li><img src="../image/aldo.jpg"><span>Aldo</span></li>
+									<li><img src="../image/raymi.jpg"><span>Raymi Saldonado</span></li>
+									<li><img src="../image/mariana.jpg"><span>Mariana</span></li>
+									<li><img src="../image/anamaria.jpg"><span>Ana Maria</span></li>
+									<li><img src="../image/rodulfo.jpg"><span>Rodulfo</span></li>
+									<li><img src="../image/andrea.jpg"><span>Andrea</span></li>
+									<li><img src="../image/mariapaula.jpg"><span>Maria Paula</span></li>
+									<li><img src="../image/katy.jpg"><span>Katy</span></li>
+									<li><img src="../image/aldo.jpg"><span>Aldo</span></li>
 								</ul>
 							</div>
 						</div>
@@ -84,28 +83,33 @@
 										</div>
 									</div>
 									<div class="col-md-3">
-										<div class="media">
-											<div class="media-left">
-												<i class="icon-attachment"></i>
-											</div>
-											<div class="media-body">
-												<i class="icon-dots-three-vertical"></i>
-											</div>					
-										</div>
+										<i class="icon-dots-three-vertical pull-right"></i>
+										<i class="icon-attachment pull-right"></i>					
 									</div>
 								</div>								
 							</div>
 							<div class="panel-chat">
-								<div><i class="icon-insert_emoticon"></i></div>
-								<input value="escribe tu mensaje aqui" type="text" id="mensaje" class="form-control">
-								<div><i class="icon-mic"></i></div>
-								<button onclick="enviarMensaje()">Enviar mensaje</button>
-								<button onclick="limpiarMensajes()">Limpiar mensajes</button>
-								
 
 								<div class="conversacion">
 									<ul id="lista_mensajes" class="list-group"></ul>
 
+								</div>
+
+								<div class="input-group">
+									<span class="input-group-addon"><i class="icon-insert_emoticon"></i></span>
+									<input placeholder="Escribe tu mensaje aqui" type="text" id="mensaje" class="form-control">
+									<span class="input-group-addon"><i class="icon-mic"></i></span>
+								</div>
+								<button onclick="enviarMensaje()">Enviar mensaje</button>
+								<button onclick="limpiarMensajes()">Limpiar mensajes</button>
+
+								
+
+								<div
+									class="fb-like"
+									data-share="true"
+									data-width="450"
+									data-show-faces="true">
 								</div>
 
 																
